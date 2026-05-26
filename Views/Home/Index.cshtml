@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center py-5">
+    <i class="bi bi-kanban-fill display-1 text-primary mb-3 d-block"></i>
+    <h1 class="display-5 fw-bold">Bienvenido a MiniJira</h1>
+    <p class="lead text-muted col-md-6 mx-auto mb-4">
+        Organiza tus proyectos y gestiona las tareas de tu equipo de forma simple y efectiva.
+    </p>
+    <a asp-controller="Proyectos" asp-action="Index" class="btn btn-primary btn-lg px-5">
+        <i class="bi bi-folder-open me-2"></i>Ver Proyectos
+    </a>
+</div>
+
+<hr class="my-5" />
+
+<div class="row text-center g-4">
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 p-3">
+            <i class="bi bi-folder-plus display-4 text-primary mb-3"></i>
+            <h5 class="fw-semibold">Crea Proyectos</h5>
+            <p class="text-muted small">Define el alcance y organiza tu trabajo en proyectos separados.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 p-3">
+            <i class="bi bi-list-check display-4 text-success mb-3"></i>
+            <h5 class="fw-semibold">Gestiona Tareas</h5>
+            <p class="text-muted small">Crea, asigna prioridades y sigue el estado de cada tarea.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 p-3">
+            <i class="bi bi-shield-lock display-4 text-warning mb-3"></i>
+            <h5 class="fw-semibold">Acceso Seguro</h5>
+            <p class="text-muted small">Solo usuarios autenticados pueden crear o modificar contenido.</p>
+        </div>
+    </div>
+</div>
